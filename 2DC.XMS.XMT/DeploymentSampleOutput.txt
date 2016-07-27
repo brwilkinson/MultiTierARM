@@ -1,0 +1,256 @@
+#
+# DeploymentSampleOutput.txt
+#
+
+15:30:28 - Build started.
+15:30:28 - Project "2DCXMSXMT.deployproj" (StageArtifacts target(s)):
+15:30:28 - Project "2DCXMSXMT.deployproj" (ContentFilesProjectOutputGroup target(s)):
+15:30:28 - Done building project "2DCXMSXMT.deployproj".
+15:30:28 - Done building project "2DCXMSXMT.deployproj".
+15:30:28 - Build succeeded.
+15:30:28 - The following parameter values will be used for this deployment:
+15:30:28 -     DeploymentID: 06
+15:30:28 -     Prefix: BRW
+15:30:28 -     Environment: Dev
+15:30:28 -     vmStorageAccountType: Standard_LRS
+15:30:28 -     vmAdminUserName: BRW
+15:30:28 -     vmAdminPassword: <securestring>
+15:30:28 -     vmDomainName: Contoso.com
+15:30:28 -     vmWindowsOSVersion: 2012-R2-Datacenter
+15:30:28 -     numberOfInstancesMemberServer: 1
+15:30:28 -     numberOfInstancesMidTierServer: 1
+15:30:28 -     _artifactsLocation: 
+15:30:28 -     _artifactsLocationSasToken: <securestring>
+15:30:28 -     vaultName: kvContoso
+15:30:28 -     vaultResourceGroup: rgGlobal
+15:30:28 -     certificateUrl: https://kvcontoso.vault.azure.net:443/secrets/contosowildcard/e5c714c2d2ad4896965b2afa30ff9974
+15:30:28 - Launching deployment PowerShell script with the following command:
+15:30:28 - 'c:\users\benwilk\onedrive\coding\brw3\2dc.xms.xmt\2dc.xms.xmt\Scripts\Deploy-AzureResourceGroup.ps1' -StorageAccountName 'saeastus01' -ResourceGroupName '2DCXMSXMT-06' -ResourceGroupLocation 'eastus' -TemplateFile 'c:\users\benwilk\onedrive\coding\brw3\2dc.xms.xmt\2dc.xms.xmt\templates\azuredeploy.json' -TemplateParametersFile 'c:\users\benwilk\onedrive\coding\brw3\2dc.xms.xmt\2dc.xms.xmt\templates\azuredeploy.parameters.json' -ArtifactStagingDirectory '..\bin\Debug\staging' -UploadArtifacts -StorageAccountResourceGroupName 'rgGlobal'
+15:30:32 - 
+15:30:32 - 
+15:30:32 - Environment           : AzureCloud
+15:30:32 - Account               : benwilk@microsoft.com
+15:30:32 - TenantId              : 72f988bf-86f1-41af-91ab-2d7cd011db47
+15:30:32 - SubscriptionId        : b8f402aa-20f7-4888-b45c-3cf086dad9c3
+15:30:32 - CurrentStorageAccount : 
+15:30:32 - 
+15:30:32 - 
+15:30:32 - DateTime : Wednesday, July 27, 2016 3:30:32 PM
+15:30:32 - 
+15:31:00 - 
+15:31:00 - Transfer summary:
+15:31:00 - -----------------
+15:31:00 - Total files transferred: 43
+15:31:00 - Transfer successfully:   43
+15:31:00 - Transfer failed:         0
+15:31:00 - Elapsed time:            00.00:00:25
+15:31:00 - [WARNING] The output object type of this cmdlet will be modified in a future release. Also, the usability of Tag parameter in this cmdlet will be modified in a future release. This will impact creating, updating and appending tags for Azure resources. For more details about the change, please visit https://github.com/Azure/azure-powershell/issues/726#issuecomment-213545494
+15:31:02 - [VERBOSE] 3:31:02 PM - Created resource group '2DCXMSXMT-06' in location 'eastus'
+15:31:02 - 
+15:31:02 - ResourceGroupName : 2DCXMSXMT-06
+15:31:02 - Location          : eastus
+15:31:02 - Resources         : {}
+15:31:02 - ResourcesTable    : 
+15:31:02 - ProvisioningState : Succeeded
+15:31:02 - Tags              : {}
+15:31:02 - TagsTable         : 
+15:31:02 - ResourceId        : /subscriptions/b8f402aa-20f7-4888-b45c-3cf086dad9c3/resourc
+15:31:02 -                     eGroups/2DCXMSXMT-06
+15:31:02 - 
+15:31:02 - [WARNING] The output object type of this cmdlet will be modified in a future release.
+15:31:06 - [VERBOSE] 3:31:06 PM - Template is valid.
+15:31:08 - [VERBOSE] 3:31:08 PM - Create template deployment 'azuredeploy-0727-2231'.
+15:31:19 - [VERBOSE] 3:31:19 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmDC1' provisioning status is running
+15:31:19 - [VERBOSE] 3:31:19 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmMS1' provisioning status is running
+15:31:19 - [VERBOSE] 3:31:19 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmMT1' provisioning status is running
+15:31:19 - [VERBOSE] 3:31:19 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmDC2' provisioning status is running
+15:31:19 - [VERBOSE] 3:31:19 PM - Resource Microsoft.Storage/storageAccounts 'sabrwdev06' provisioning status is running
+15:31:19 - [VERBOSE] 3:31:19 PM - Resource Microsoft.Network/virtualNetworks 'vnBRWDev06' provisioning status is running
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmMS1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/networkInterfaces 'NIC_vmMT1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/networkInterfaces 'NIC_vmDC1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/networkInterfaces 'NIC_vmMS1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/networkInterfaces 'NIC_vmDC2' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmDC1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmDC2' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmMT1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmDC1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmMS1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmMT1' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/publicIPAddresses 'PublicIP_vmDC2' provisioning status is succeeded
+15:31:30 - [VERBOSE] 3:31:30 PM - Resource Microsoft.Network/virtualNetworks 'vnBRWDev06' provisioning status is succeeded
+15:31:51 - [VERBOSE] 3:31:51 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06MT1' provisioning status is running
+15:31:51 - [VERBOSE] 3:31:51 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06DC2' provisioning status is running
+15:31:51 - [VERBOSE] 3:31:51 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06MS1' provisioning status is running
+15:31:51 - [VERBOSE] 3:31:51 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06DC1' provisioning status is running
+15:31:51 - [VERBOSE] 3:31:51 PM - Resource Microsoft.Storage/storageAccounts 'sabrwdev06' provisioning status is succeeded
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06MT1/vmdscMTX' provisioning status is running
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06DC1/vmdscDC1' provisioning status is running
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06DC2/vmdscDC2' provisioning status is running
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06MS1/vmdscMSx' provisioning status is running
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06MT1' provisioning status is succeeded
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06DC2' provisioning status is succeeded
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06MS1' provisioning status is succeeded
+15:35:56 - [VERBOSE] 3:35:56 PM - Resource Microsoft.Compute/virtualMachines 'vmBRWDev06DC1' provisioning status is succeeded
+15:57:41 - [VERBOSE] 3:57:41 PM - Resource Microsoft.Resources/deployments 'dpRemovePublicDNS' provisioning status is running
+15:57:41 - [VERBOSE] 3:57:41 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06DC1/vmdscDC1' provisioning status is succeeded
+15:57:52 - [VERBOSE] 3:57:52 PM - Resource Microsoft.Resources/deployments 'dpRemovePublicDNS' provisioning status is succeeded
+15:58:58 - [VERBOSE] 3:58:58 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06MS1/vmdscMSx' provisioning status is succeeded
+16:01:21 - [VERBOSE] 4:01:21 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06MT1/vmdscMTX' provisioning status is succeeded
+16:04:27 - [VERBOSE] 4:04:27 PM - Resource Microsoft.Compute/virtualMachines/extensions 'vmBRWDev06DC2/vmdscDC2' provisioning status is succeeded
+16:04:39 - [VERBOSE] 4:04:39 PM - Resource Microsoft.Resources/deployments 'dpAddDC2DNSServer' provisioning status is running
+16:05:01 - 
+16:05:01 - DeploymentName          : azuredeploy-0727-2231
+16:05:01 - CorrelationId           : 61e3bb5c-5a19-4f83-a00c-00502dea176f
+16:05:01 - ResourceGroupName       : 2DCXMSXMT-06
+16:05:01 - ProvisioningState       : Succeeded
+16:05:01 - Timestamp               : 7/27/2016 11:04:50 PM
+16:05:01 - Mode                    : Incremental
+16:05:01 - TemplateLink            : 
+16:05:01 - TemplateLinkString      : 
+16:05:01 - DeploymentDebugLogLevel : 
+16:05:01 - Parameters              : {[deploymentID, Microsoft.Azure.Commands.Resources.Mo
+16:05:01 -                           dels.DeploymentVariable], [prefix, Microsoft.Azure.Co
+16:05:01 -                           mmands.Resources.Models.DeploymentVariable], 
+16:05:01 -                           [environment, Microsoft.Azure.Commands.Resources.Mode
+16:05:01 -                           ls.DeploymentVariable], [vmStorageAccountType, Micros
+16:05:01 -                           oft.Azure.Commands.Resources.Models.DeploymentVariabl
+16:05:01 -                           e]...}
+16:05:01 - ParametersString        : 
+16:05:01 -                           Name             Type                       Value    
+16:05:01 -                            
+16:05:01 -                           ===============  =========================  
+16:05:01 -                           ==========
+16:05:01 -                           deploymentID     String                     06       
+16:05:01 -                            
+16:05:01 -                           prefix           String                     BRW      
+16:05:01 -                            
+16:05:01 -                           environment      String                     Dev      
+16:05:01 -                            
+16:05:01 -                           vmStorageAccountType  String                     
+16:05:01 -                           Standard_LRS
+16:05:01 -                           vmAdminUserName  String                     BRW      
+16:05:01 -                            
+16:05:01 -                           vmAdminPassword  SecureString                        
+16:05:01 -                            
+16:05:01 -                           vmDomainName     String                     
+16:05:01 -                           Contoso.com
+16:05:01 -                           vmWindowsOSVersion  String                     
+16:05:01 -                           2012-R2-Datacenter
+16:05:01 -                           numberOfInstancesMemberServer  Int                   
+16:05:01 -                                1         
+16:05:01 -                           numberOfInstancesMidTierServer  Int                  
+16:05:01 -                                 1         
+16:05:01 -                           _artifactsLocation  String                     https:
+16:05:01 -                           //saeastus01.blob.core.windows.net/2dcxmsxmt-06-stage
+16:05:01 -                           artifacts
+16:05:01 -                           _artifactsLocationSasToken  SecureString             
+16:05:01 -                                       
+16:05:01 -                           vaultName        String                     
+16:05:01 -                           kvContoso 
+16:05:01 -                           vaultResourceGroup  String                     
+16:05:01 -                           rgGlobal  
+16:05:01 -                           certificateUrl   String                     https://k
+16:05:01 -                           vcontoso.vault.azure.net:443/secrets/contosowildcard/
+16:05:01 -                           e5c714c2d2ad4896965b2afa30ff9974
+16:05:01 -                           
+16:05:01 - Outputs                 : {[dC1-fqdn, Microsoft.Azure.Commands.Resources.Models
+16:05:01 -                           .DeploymentVariable], [dC2-fqdn, Microsoft.Azure.Comm
+16:05:01 -                           ands.Resources.Models.DeploymentVariable], 
+16:05:01 -                           [mS1-fqdn, Microsoft.Azure.Commands.Resources.Models.
+16:05:01 -                           DeploymentVariable], [mT1-fqdn, Microsoft.Azure.Comma
+16:05:01 -                           nds.Resources.Models.DeploymentVariable]}
+16:05:01 - OutputsString           : 
+16:05:01 -                           Name             Type                       Value    
+16:05:01 -                            
+16:05:01 -                           ===============  =========================  
+16:05:01 -                           ==========
+16:05:01 -                           dC1-fqdn         String                     
+16:05:01 -                           contosovmbrwdev06dc1.eastus.cloudapp.azure.com
+16:05:01 -                           dC2-fqdn         String                     
+16:05:01 -                           contosovmbrwdev06dc2.eastus.cloudapp.azure.com
+16:05:01 -                           mS1-fqdn         String                     
+16:05:01 -                           contosovmbrwdev06ms1.eastus.cloudapp.azure.com
+16:05:01 -                           mT1-fqdn         String                     
+16:05:01 -                           contosovmbrwdev06mt1.eastus.cloudapp.azure.com
+16:05:01 -                           
+16:05:01 - 
+16:05:01 - 
+16:05:01 - DeploymentName          : azuredeploy-0727-2231
+16:05:01 - CorrelationId           : 61e3bb5c-5a19-4f83-a00c-00502dea176f
+16:05:01 - ResourceGroupName       : 2DCXMSXMT-06
+16:05:01 - ProvisioningState       : Succeeded
+16:05:01 - Timestamp               : 7/27/2016 11:04:50 PM
+16:05:01 - Mode                    : Incremental
+16:05:01 - TemplateLink            : 
+16:05:01 - TemplateLinkString      : 
+16:05:01 - DeploymentDebugLogLevel : 
+16:05:01 - Parameters              : {[deploymentID, Microsoft.Azure.Commands.Resources.Mo
+16:05:01 -                           dels.DeploymentVariable], [prefix, Microsoft.Azure.Co
+16:05:01 -                           mmands.Resources.Models.DeploymentVariable], 
+16:05:01 -                           [environment, Microsoft.Azure.Commands.Resources.Mode
+16:05:01 -                           ls.DeploymentVariable], [vmStorageAccountType, Micros
+16:05:01 -                           oft.Azure.Commands.Resources.Models.DeploymentVariabl
+16:05:01 -                           e]...}
+16:05:01 - ParametersString        : 
+16:05:01 -                           Name             Type                       Value    
+16:05:01 -                            
+16:05:01 -                           ===============  =========================  
+16:05:01 -                           ==========
+16:05:01 -                           deploymentID     String                     06       
+16:05:01 -                            
+16:05:01 -                           prefix           String                     BRW      
+16:05:01 -                            
+16:05:01 -                           environment      String                     Dev      
+16:05:01 -                            
+16:05:01 -                           vmStorageAccountType  String                     
+16:05:01 -                           Standard_LRS
+16:05:01 -                           vmAdminUserName  String                     BRW      
+16:05:01 -                            
+16:05:01 -                           vmAdminPassword  SecureString                        
+16:05:01 -                            
+16:05:01 -                           vmDomainName     String                     
+16:05:01 -                           Contoso.com
+16:05:01 -                           vmWindowsOSVersion  String                     
+16:05:01 -                           2012-R2-Datacenter
+16:05:01 -                           numberOfInstancesMemberServer  Int                   
+16:05:01 -                                1         
+16:05:01 -                           numberOfInstancesMidTierServer  Int                  
+16:05:01 -                                 1         
+16:05:01 -                           _artifactsLocation  String                     https:
+16:05:01 -                           //saeastus01.blob.core.windows.net/2dcxmsxmt-06-stage
+16:05:01 -                           artifacts
+16:05:01 -                           _artifactsLocationSasToken  SecureString             
+16:05:01 -                                       
+16:05:01 -                           vaultName        String                     
+16:05:01 -                           kvContoso 
+16:05:01 -                           vaultResourceGroup  String                     
+16:05:01 -                           rgGlobal  
+16:05:01 -                           certificateUrl   String                     https://k
+16:05:01 -                           vcontoso.vault.azure.net:443/secrets/contosowildcard/
+16:05:01 -                           e5c714c2d2ad4896965b2afa30ff9974
+16:05:01 -                           
+16:05:01 - Outputs                 : {[dC1-fqdn, Microsoft.Azure.Commands.Resources.Models
+16:05:01 -                           .DeploymentVariable], [dC2-fqdn, Microsoft.Azure.Comm
+16:05:01 -                           ands.Resources.Models.DeploymentVariable], 
+16:05:01 -                           [mS1-fqdn, Microsoft.Azure.Commands.Resources.Models.
+16:05:01 -                           DeploymentVariable], [mT1-fqdn, Microsoft.Azure.Comma
+16:05:01 -                           nds.Resources.Models.DeploymentVariable]}
+16:05:01 - OutputsString           : 
+16:05:01 -                           Name             Value 
+16:05:01 -                           ===============  ==========
+16:05:01 -                           dC1-fqdn         contosovmbrwdev06dc1.eastus.cloudapp.azure.com
+16:05:01 -                           dC2-fqdn         contosovmbrwdev06dc2.eastus.cloudapp.azure.com
+16:05:01 -                           mS1-fqdn         contosovmbrwdev06ms1.eastus.cloudapp.azure.com
+16:05:01 -                           mT1-fqdn         contosovmbrwdev06mt1.eastus.cloudapp.azure.com
+16:05:01 -                           
+16:05:01 - 
+16:05:10 - 
+16:05:10 - TotalHours   : 0.577292044361111
+16:05:10 - TotalMinutes : 34.6375226616667
+16:05:10 - TotalSeconds : 2078.2513597
+16:05:10 - 
+16:05:10 - 
+16:05:10 - 
+16:05:10 - 
+16:05:10 - Successfully deployed template 'c:\users\benwilk\onedrive\coding\brw3\2dc.xms.xmt\2dc.xms.xmt\templates\azuredeploy.json' to resource group '2DCXMSXMT-06'.
