@@ -77,7 +77,7 @@
 
 	The modules should all be found under the following directory:
 
-	Directory: C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ResourceManager\AzureResourceManager
+	Directory: __C:\Program Files (x86)\Microsoft SDKs\Azure\PowerShell\ResourceManager\AzureResourceManager__
 
 	If you have any Azure Modules under the following directory, they have likely been manually installed
 	or installed via the PowerShell Gallery. This can cause versioning issues and you should remove those modules.
