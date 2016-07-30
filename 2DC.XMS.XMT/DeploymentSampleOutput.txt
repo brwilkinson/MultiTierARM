@@ -29,9 +29,9 @@
 15:30:32 - 
 15:30:32 - 
 15:30:32 - Environment           : AzureCloud
-15:30:32 - Account               : benwilk@microsoft.com
-15:30:32 - TenantId              : 72f988bf-86f1-41af-91ab-2d7cd011db47
-15:30:32 - SubscriptionId        : b8f402aa-20f7-4888-b45c-3cf086dad9c3
+15:30:32 - Account               : 
+15:30:32 - TenantId              : 
+15:30:32 - SubscriptionId        : 
 15:30:32 - CurrentStorageAccount : 
 15:30:32 - 
 15:30:32 - 
