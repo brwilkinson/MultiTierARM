@@ -112,7 +112,7 @@ New-AzureRmResourceGroupDeployment -Name ((Get-ChildItem $TemplateFile).BaseName
                                    @OptionalParameters `
                                    -Force -Verbose -OutVariable Deployment
 
-$Deployment | select Name Value
+$Deployment | select Name, Value
 
 # Download the RDP files from the deployment to a chosen directory 
 if (Test-Path -Path $RDPFileDirectory)
