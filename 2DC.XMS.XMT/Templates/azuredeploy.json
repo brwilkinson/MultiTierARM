@@ -360,7 +360,9 @@
         "[concat('Microsoft.Network/publicIPAddresses/', variables('DC1PublicIPName'))]"
       ],
       "tags": {
-        "displayName": "vmDC1"
+        "displayName": "vmDC1",
+        "Environment": "[parameters('Environment')]"
+        
       },
       "properties": {
         "hardwareProfile": {
@@ -459,7 +461,8 @@
         "[concat('Microsoft.Network/publicIPAddresses/', variables('DC2PublicIPName'))]"
       ],
       "tags": {
-        "displayName": "vmDC2"
+        "displayName": "vmDC2",
+        "Environment": "[parameters('Environment')]"
       },
       "properties": {
         "hardwareProfile": {
@@ -561,7 +564,8 @@
         "[concat('Microsoft.Network/publicIPAddresses/', concat('PublicIP_vmMS', copyIndex(1)))]"
       ],
       "tags": {
-        "displayName": "vmMTX"
+        "displayName": "vmMTX",
+        "Environment": "[parameters('Environment')]"
       },
       "properties": {
         "hardwareProfile": {
@@ -684,7 +688,8 @@
         "[concat('Microsoft.Network/publicIPAddresses/', concat('PublicIP_vmMT', copyIndex(1)))]"
       ],
       "tags": {
-        "displayName": "vmMSX"
+        "displayName": "vmMSX",
+        "Environment": "[parameters('Environment')]"
       },
       "properties": {
         "hardwareProfile": {
