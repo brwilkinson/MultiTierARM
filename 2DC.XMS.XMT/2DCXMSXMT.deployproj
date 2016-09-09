@@ -33,9 +33,6 @@
     <Folder Include="Tools\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DSC\dpSetvNetDNS.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
     <None Include="CreateKeyVaultAndStoreSecrets.ps1" />
     <None Include="CreateUploadCertificatestoKeyVault.ps1" />
     <None Include="Deployment.targets">

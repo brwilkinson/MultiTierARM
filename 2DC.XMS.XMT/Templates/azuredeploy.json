@@ -420,7 +420,8 @@
             "[concat('Microsoft.Compute/virtualMachines/', variables('DC1vmName'))]"
           ],
           "tags": {
-            "displayName": "vmdscDC1"
+            "displayName": "vmdscDC1",
+            "Environment": "parameters('Environment')"  
           },
           "properties": {
             "publisher": "Microsoft.Powershell",
