@@ -93,8 +93,8 @@ if ($UploadArtifacts) {
 			Container  = $StorageContainerName 
 			Context    = $StorageAccountContext 
 			Permission = 'r'
-			ExpiryTime = (Get-Date).AddHours(12)
-			StartTime  = (Get-Date).AddHours(-4) # allow for different timezones and offsets
+			ExpiryTime = (Get-Date).ToUniversalTime().AddHours(12)
+			StartTime  = (Get-Date).ToUniversalTime().AddHours(-4) # allow for different timezones and offsets
 			}
 		$ArtifactsLocationSasToken = New-AzureStorageContainerSASToken @StorageTokenParams
         $ArtifactsLocationSasToken = ConvertTo-SecureString $ArtifactsLocationSasToken -AsPlainText -Force
