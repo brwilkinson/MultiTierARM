@@ -3,8 +3,7 @@ Create a domain with 2 DC's, Mid Tier Servers and Member Servers
 
 * Each machine has it's own Public IP address that you can connect
 
-* Review the alternate project for using a LoadBalancer and single Public IP address
-
+* Review the alternate project for using a LoadBalancer and single Public IP address 
 [MultiTierARMLoadBalance] (https://github.com/brwilkinson/MultiTierARMLoadBalance)
 
 ## Steps to get up and running
