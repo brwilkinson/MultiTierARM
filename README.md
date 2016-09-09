@@ -5,7 +5,7 @@ Create a domain with 2 DC's, Mid Tier Servers and Member Servers
 
 * Review the alternate project for using a LoadBalancer and single Public IP address
 
-[MultiTierARMLoadBalance] (https://github.com/brwilkinson/MultiTierARMLoadBalance) "MultiTierARMLoadBalance"
+[MultiTierARMLoadBalance] (https://github.com/brwilkinson/MultiTierARMLoadBalance)
 
 ## Steps to get up and running
     1. Download the zip file or clone the repo
